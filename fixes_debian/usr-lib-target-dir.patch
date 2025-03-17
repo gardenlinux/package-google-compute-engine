@@ -1,0 +1,12 @@
+diff --color -Naur a/debian/install b/debian/install
+--- a/debian/install	2025-03-17 12:42:47
++++ b/debian/install	2025-03-17 12:52:15
+@@ -5,6 +5,6 @@
+ etc/NetworkManager/dispatcher.d/*
+ usr/lib/networkd-dispatcher/*
+ etc/systemd/resolved.conf.d/*
+-lib/udev/rules.d/*
+-lib/udev/*
++usr/lib/udev/rules.d/*
++usr/lib/udev/*
+ usr/bin/*

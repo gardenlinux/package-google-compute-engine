@@ -1,5 +1,5 @@
 version_orig=20250221.00
-version_suffix=gl0
+version_suffix=gl1
 
 # Clone upstream repository
 workdir="$(mktemp -d)"
@@ -25,6 +25,11 @@ EOF
 
 echo "3.0 (native)" > ./debian/source/format
 
+
+# Move lib to usr/lib
+mv src/lib/* src/usr/lib/
+rm -rf src/lib
+
 # Cleanup
 rm -rf ./.git
 rm -rf ./packaging
@@ -33,5 +38,7 @@ popd
 
 # Import modified upstream source distribution
 import_src "$workdir"
+
+apply_patches fixes_debian
 
 rm -rf "$workdir"
