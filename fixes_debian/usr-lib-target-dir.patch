@@ -1,6 +1,6 @@
-diff --color -Naur a/debian/install b/debian/install
---- a/debian/install	2025-03-17 12:42:47
-+++ b/debian/install	2025-03-17 12:52:15
+diff --color -Naur a/debian/google-compute-engine.install b/debian/google-compute-engine.install
+--- a/debian/google-compute-engine.install	2025-03-17 12:42:47
++++ b/debian/google-compute-engine.install	2025-03-17 12:52:15
 @@ -5,6 +5,6 @@
  etc/NetworkManager/dispatcher.d/*
  usr/lib/networkd-dispatcher/*
